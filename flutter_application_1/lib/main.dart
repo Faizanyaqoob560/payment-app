@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Payment App',
-      color: Colors.deepPurple.shade300,
+      color: Colors.grey.shade700,
       home: SplashScreen(), // Start with the splash screen
     );
   }
