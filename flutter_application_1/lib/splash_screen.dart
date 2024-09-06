@@ -24,7 +24,7 @@ class SplashScreen extends StatelessWidget {
         child: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.blue, Colors.purple],
+              colors: [Colors.grey, Colors.grey],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -36,7 +36,7 @@ class SplashScreen extends StatelessWidget {
                 'The journey to financial freedom starts with a single step.\n\nTap to continue...',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),
