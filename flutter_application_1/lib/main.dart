@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Payment App',
       color: Colors.grey.shade700,
-      home: SplashScreen(), // Start with the splash screen
+      home: SplashScreen(),
     );
   }
 }

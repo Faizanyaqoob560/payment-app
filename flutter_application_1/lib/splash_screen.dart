@@ -7,8 +7,6 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: GestureDetector(
         onTap: () {
-          // Navigate to LoginScreen when user taps on splash screen
-
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
