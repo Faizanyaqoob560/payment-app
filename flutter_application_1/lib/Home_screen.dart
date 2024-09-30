@@ -6,6 +6,34 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Paymwnt app",
+        ),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text("Header"),
+            ),
+            ListTile(
+              title: Text("one"),
+              onTap: () {},
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            ListTile(
+              title: Text("two"),
+              onTap: () {},
+            ),
+          ],
+        ),
+      ),
       backgroundColor: Colors.grey.shade300,
       body: SafeArea(
         child: Padding(

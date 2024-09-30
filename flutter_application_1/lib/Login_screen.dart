@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Signup_screen.dart';
 import 'home_screen.dart';
 import 'textfield.dart';
 
@@ -64,6 +65,7 @@ class LoginScreen extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
                       padding: const EdgeInsets.all(25),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
@@ -73,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                       child: Text(
                         "sign in",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
                         ),
@@ -94,7 +96,13 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignupScreen()),
+                          );
+                        },
                         child: const Text(
                           'Sign Up',
                           style: TextStyle(color: Colors.blue),

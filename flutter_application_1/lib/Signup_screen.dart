@@ -72,14 +72,19 @@ class SignupScreen extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.symmetric(vertical: 16),
+                      backgroundColor: Colors.black,
+                      padding: const EdgeInsets.all(25),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(25),
                       ),
                     ),
                     child: const Text(
                       'Sign Up',
-                      style: TextStyle(fontSize: 18),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 20),
