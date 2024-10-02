@@ -34,7 +34,7 @@ class SplashScreen extends StatelessWidget {
                 'The journey to financial freedom starts with a single step.\n\nTap to continue...',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.black12,
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),
