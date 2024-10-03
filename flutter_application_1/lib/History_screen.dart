@@ -1,62 +1,35 @@
 import 'package:flutter/material.dart';
 
-class TransactionHistoryScreen extends StatefulWidget {
-  const TransactionHistoryScreen({Key? key}) : super(key: key);
+class HistoryScreen extends StatefulWidget {
+  const HistoryScreen({Key? key}) : super(key: key);
 
   @override
-  _TransactionHistoryScreenState createState() =>
-      _TransactionHistoryScreenState();
+  _HistoryScreenState createState() => _HistoryScreenState();
 }
 
-class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
-  // Sample transaction data
+class _HistoryScreenState extends State<HistoryScreen> {
   final List<Map<String, String>> transactions = [
-    {
-      'date': '2024-09-01',
-      'amount': '100',
-      'recipient': 'Alice',
-      'status': 'Success'
-    },
-    {
-      'date': '2024-09-02',
-      'amount': '50',
-      'recipient': 'Bob',
-      'status': 'Failed'
-    },
-    {
-      'date': '2024-09-03',
-      'amount': '200',
-      'recipient': 'Charlie',
-      'status': 'Success'
-    },
-    {
-      'date': '2024-09-04',
-      'amount': '300',
-      'recipient': 'Diana',
-      'status': 'Success'
-    },
-    {
-      'date': '2024-09-05',
-      'amount': '150',
-      'recipient': 'Eve',
-      'status': 'Failed'
-    },
+    {'date': '2024-09-01', 'amount': '100', 'status': 'Success'},
+    {'date': '2024-09-02', 'amount': '50', 'status': 'Failed'},
+    {'date': '2024-09-03', 'amount': '200', 'status': 'Success'},
+    {'date': '2024-09-04', 'amount': '300', 'status': 'Success'},
+    {'date': '2024-09-05', 'amount': '150', 'status': 'Failed'},
   ];
 
   List<Map<String, String>> filteredTransactions = [];
-  String filterStatus = "All"; // Default filter is 'All'
+  String filterStatus = "All";
 
   @override
   void initState() {
     super.initState();
-    filteredTransactions = transactions; // Initially show all transactions
+    filteredTransactions = transactions;
   }
 
-  // Function to filter transactions by status
+  // Function for transactions--status
   void filterTransactions(String status) {
     setState(() {
       if (status == "All") {
-        filteredTransactions = transactions; // Show all transactions
+        filteredTransactions = transactions;
       } else {
         filteredTransactions = transactions
             .where((transaction) => transaction['status'] == status)
