@@ -120,8 +120,8 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   // Payment Button
-                  GestureDetector(
-                    onTap: () {},
+                  ElevatedButton(
+                    onPressed: () {},
                     child: const Column(
                       children: [
                         Icon(
@@ -139,8 +139,8 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   // History Button
-                  GestureDetector(
-                    onTap: () {},
+                  ElevatedButton(
+                    onPressed: () {},
                     child: const Column(
                       children: [
                         Icon(
@@ -158,7 +158,6 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   // more button
-
                   GestureDetector(
                     onTap: () {},
                     child: const Column(
