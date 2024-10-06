@@ -58,7 +58,6 @@ class LoginScreen extends StatelessWidget {
                   // Login Button
                   ElevatedButton(
                     onPressed: () {
-                      // Navigate to HomeScreen after successful login
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => HomeScreen()),
@@ -84,7 +83,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
 
-                  // Forgot Password & Sign Up Row
+                  // Forgot Password row
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

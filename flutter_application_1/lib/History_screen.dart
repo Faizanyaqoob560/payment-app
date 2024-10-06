@@ -25,7 +25,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
     filteredTransactions = transactions;
   }
 
-  // Function for transactions--status
+ 
   void filterTransactions(String status) {
     setState(() {
       if (status == "All") {
